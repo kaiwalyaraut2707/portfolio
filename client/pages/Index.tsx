@@ -93,76 +93,27 @@ export default function Index() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Services
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Comprehensive solutions to help your business grow and succeed in the digital landscape.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Service Cards */}
+      <section id="services" className="py-32 bg-white">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-4xl sm:text-5xl font-light text-gray-900 mb-20">
+            Services
+          </h2>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-16">
             {[
-              {
-                icon: <Palette className="h-8 w-8" />,
-                title: "Design & Branding",
-                description: "Logos, Brand Kits, Social Media Design",
-                color: "from-pink-500 to-rose-500"
-              },
-              {
-                icon: <PenTool className="h-8 w-8" />,
-                title: "Content Creation & Copywriting",
-                description: "Blogs, Web Copy, Social Media Captions",
-                color: "from-blue-500 to-cyan-500"
-              },
-              {
-                icon: <Globe className="h-8 w-8" />,
-                title: "Website & Funnel Building",
-                description: "Websites, Landing Pages, E-commerce",
-                color: "from-green-500 to-emerald-500"
-              },
-              {
-                icon: <TrendingUp className="h-8 w-8" />,
-                title: "Marketing & Growth",
-                description: "SEO, Social Media Marketing, Ads",
-                color: "from-purple-500 to-violet-500"
-              },
-              {
-                icon: <Bot className="h-8 w-8" />,
-                title: "AI & Automation",
-                description: "Workflow Automation, Chatbots, AI Content",
-                color: "from-orange-500 to-red-500"
-              },
-              {
-                icon: <Monitor className="h-8 w-8" />,
-                title: "Digital Products",
-                description: "Templates, E-books, Courses",
-                color: "from-indigo-500 to-blue-500"
-              },
-              {
-                icon: <Video className="h-8 w-8" />,
-                title: "Video & Multimedia",
-                description: "Thumbnails, Reels/Shorts Editing, Explainers",
-                color: "from-teal-500 to-green-500"
-              }
+              { title: "Design & branding", subtitle: "Content & copywriting" },
+              { title: "Websites & funnels", subtitle: "Marketing & growth" },
+              { title: "AI & automation", subtitle: "Digital products" },
+              { title: "Video & multimedia", subtitle: "Fast Delivery" }
             ].map((service, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-0 bg-white">
-                <CardContent className="p-8">
-                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${service.color} flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    {service.icon}
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {service.description}
-                  </p>
-                </CardContent>
-              </Card>
+              <div key={index} className="text-center">
+                <h3 className="text-lg font-medium text-gray-900 mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-lg font-medium text-gray-900">
+                  {service.subtitle}
+                </p>
+              </div>
             ))}
           </div>
         </div>
