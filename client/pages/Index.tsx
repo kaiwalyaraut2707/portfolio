@@ -47,30 +47,17 @@ export default function Index() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-              I help brands grow with{" "}
-              <span className="bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-transparent">
-                Design, Content, Websites, and Automation
-              </span>
-            </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              A freelancer blending creativity, technology, and growth to deliver impactful results.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-brand-blue to-brand-purple hover:opacity-90 transition-opacity">
-                Work With Me
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-gray-300 hover:border-gray-400">
-                View Portfolio
-                <ExternalLink className="ml-2 h-5 w-5" />
-              </Button>
-            </div>
-          </div>
+      <section className="min-h-screen flex items-center justify-center px-4">
+        <div className="text-center max-w-4xl mx-auto">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light text-gray-900 mb-8 leading-tight">
+            I help brands grow.
+          </h1>
+          <p className="text-xl sm:text-2xl text-gray-600 mb-12 font-light max-w-2xl mx-auto">
+            Design, content, and automation.
+          </p>
+          <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-8 py-3 text-base font-medium rounded-full">
+            Work with me
+          </Button>
         </div>
       </section>
 
