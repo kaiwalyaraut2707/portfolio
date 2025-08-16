@@ -324,19 +324,19 @@ export default function Index() {
             {[
               {
                 text: "Amazing work, very professional! Delivered exactly what we needed and more. The attention to detail was incredible.",
-                author: "Sarah Johnson",
+                author: "Rohit Mehra",
                 role: "Startup Founder",
                 rating: 5
               },
               {
                 text: "Incredible attention to detail and fast turnaround. Our website conversion rate increased by 300% after the redesign!",
-                author: "Mike Chen",
+                author: "Sandeep Reddy",
                 role: "E-commerce Owner",
                 rating: 5
               },
               {
                 text: "Creative, reliable, and always goes above and beyond. Best freelancer I've worked with in years!",
-                author: "Emily Rodriguez",
+                author: "Karan Patel",
                 role: "Marketing Manager",
                 rating: 5
               }
