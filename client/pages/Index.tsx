@@ -98,104 +98,27 @@ export default function Index() {
       </section>
 
       {/* Portfolio Section */}
-      <section id="portfolio" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Portfolio
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              A showcase of recent projects and creative work across different domains.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { type: "Logo Design", title: "Modern Tech Startup", category: "Branding" },
-              { type: "Website", title: "E-commerce Platform", category: "Development" },
-              { type: "Blog Post", title: "Growth Marketing Guide", category: "Content" },
-              { type: "Video Thumbnail", title: "YouTube Channel", category: "Design" },
-              { type: "Landing Page", title: "SaaS Product Launch", category: "Development" },
-              { type: "Social Media", title: "Brand Campaign", category: "Design" }
-            ].map((project, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 overflow-hidden">
-                <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-brand-blue/20 to-brand-purple/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-gray-400 text-sm font-medium">
-                      {project.type} Preview
-                    </div>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-lg font-semibold text-gray-900">
-                      {project.title}
-                    </h3>
-                    <Badge variant="outline" className="text-xs">
-                      {project.category}
-                    </Badge>
-                  </div>
-                  <p className="text-gray-600 text-sm">
-                    {project.type}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      <section id="portfolio" className="py-32 bg-white">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-4xl sm:text-5xl font-light text-gray-900 mb-20">
+            Portfolio
+          </h2>
 
-      {/* Testimonials Section */}
-      <section id="testimonials" className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Testimonials
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              What clients say about working with me.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-16">
             {[
-              {
-                text: "Amazing work, very professional! Delivered exactly what we needed and more. Highly recommend!",
-                author: "Sarah Johnson",
-                role: "Startup Founder"
-              },
-              {
-                text: "Incredible attention to detail and fast turnaround. Our website conversion rate increased by 300%!",
-                author: "Mike Chen",
-                role: "E-commerce Owner"
-              },
-              {
-                text: "Creative, reliable, and always goes above and beyond. Best freelancer I've worked with!",
-                author: "Emily Rodriguez",
-                role: "Marketing Manager"
-              }
-            ].map((testimonial, index) => (
-              <Card key={index} className="bg-white border-0 shadow-md">
-                <CardContent className="p-8">
-                  <div className="flex mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <p className="text-gray-600 mb-6 leading-relaxed">
-                    "{testimonial.text}"
-                  </p>
-                  <div>
-                    <p className="font-semibold text-gray-900">
-                      {testimonial.author}
-                    </p>
-                    <p className="text-sm text-gray-500">
-                      {testimonial.role}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
+              { title: "AI & automation", subtitle: "Digital products" },
+              { title: "Video & multimedia", subtitle: "Fast Delivery" },
+              { title: "Design & branding", subtitle: "Content & copywriting" },
+              { title: "Websites & funnels", subtitle: "Marketing & growth" }
+            ].map((project, index) => (
+              <div key={index} className="text-center">
+                <h3 className="text-lg font-medium text-gray-900 mb-2">
+                  {project.title}
+                </h3>
+                <p className="text-lg font-medium text-gray-900">
+                  {project.subtitle}
+                </p>
+              </div>
             ))}
           </div>
         </div>
