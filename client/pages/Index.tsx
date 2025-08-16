@@ -227,14 +227,50 @@ export default function Index() {
             ].map((project, index) => (
               <Card key={index} className="group overflow-hidden border shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer">
                 <div className="aspect-[4/3] relative overflow-hidden">
-                  {/* Show actual thumbnail image for Youtube Thumbnails card */}
-                  {project.title === "Youtube Thumbnails" ? (
+                  {/* Show actual images for each portfolio card */}
+                  {project.title === "Youtube Thumbnails" && (
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F6e635168f63247a0bc5d2339f6255adb%2Fc843272e50714a12b7cd2056ec4d992b?format=webp&width=800"
                       alt="Youtube Thumbnails Portfolio"
                       className="w-full h-full object-contain bg-gray-100"
                     />
-                  ) : (
+                  )}
+                  {project.title === "Brand Logo" && (
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6e635168f63247a0bc5d2339f6255adb%2Fbc0ca2061fee4895a694a765bcb41fba?format=webp&width=800"
+                      alt="Brand Logo Portfolio"
+                      className="w-full h-full object-contain bg-gray-100"
+                    />
+                  )}
+                  {project.title === "Instagram Posts" && (
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6e635168f63247a0bc5d2339f6255adb%2F27b97573562e4d73ac1f9725d3a265db?format=webp&width=800"
+                      alt="Instagram Posts Portfolio"
+                      className="w-full h-full object-contain bg-gray-100"
+                    />
+                  )}
+                  {project.title === "Books Covers" && (
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6e635168f63247a0bc5d2339f6255adb%2F73c19d0fbfe445cf8b3168d3b0ca06b6?format=webp&width=800"
+                      alt="Books Covers Portfolio"
+                      className="w-full h-full object-contain bg-gray-100"
+                    />
+                  )}
+                  {project.title === "Website Designs" && (
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6e635168f63247a0bc5d2339f6255adb%2Ffe681f69b4444dc9b27fc31f60ea38f9?format=webp&width=800"
+                      alt="Website Designs Portfolio"
+                      className="w-full h-full object-contain bg-gray-100"
+                    />
+                  )}
+                  {project.title === "Ads and Marketing Campaigns" && (
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6e635168f63247a0bc5d2339f6255adb%2F8641376916a442bd9ec379644c5340f5?format=webp&width=800"
+                      alt="Ads and Marketing Campaigns Portfolio"
+                      className="w-full h-full object-contain bg-gray-100"
+                    />
+                  )}
+                  {!["Youtube Thumbnails", "Brand Logo", "Instagram Posts", "Books Covers", "Website Designs", "Ads and Marketing Campaigns"].includes(project.title) && (
                     <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200"></div>
                   )}
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/90 transition-all duration-500"></div>
