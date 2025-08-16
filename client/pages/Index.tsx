@@ -26,22 +26,18 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="text-xl font-bold bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-transparent">
-              Your Name
+      <nav className="absolute top-0 left-0 right-0 z-50 py-6 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex justify-between items-center">
+            <div className="text-xl font-medium text-gray-900">
+              Aquarius Red
             </div>
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex space-x-8 text-sm">
               <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors">About</a>
               <a href="#services" className="text-gray-600 hover:text-gray-900 transition-colors">Services</a>
               <a href="#portfolio" className="text-gray-600 hover:text-gray-900 transition-colors">Portfolio</a>
-              <a href="#testimonials" className="text-gray-600 hover:text-gray-900 transition-colors">Testimonials</a>
               <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
             </div>
-            <Button className="bg-gradient-to-r from-brand-blue to-brand-purple hover:opacity-90 transition-opacity">
-              Work With Me
-            </Button>
           </div>
         </div>
       </nav>
