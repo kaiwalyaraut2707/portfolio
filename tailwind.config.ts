@@ -57,12 +57,16 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Brand colors for portfolio
-        brand: {
-          blue: "#3B82F6",
-          purple: "#8B5CF6",
-          "gradient-from": "#3B82F6",
-          "gradient-to": "#8B5CF6",
+        // Premium brand colors
+        gold: "#FFD700",
+        "gold-dark": "#DAA520",
+        "gold-light": "#FFF8DC",
+        premium: {
+          black: "#000000",
+          gold: "#FFD700",
+          "gold-dark": "#DAA520",
+          "gold-light": "#FFF8DC",
+          white: "#FFFFFF",
         },
       },
       borderRadius: {
