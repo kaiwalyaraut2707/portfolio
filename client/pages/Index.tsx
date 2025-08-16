@@ -72,21 +72,13 @@ export default function Index() {
           <p className="text-xl sm:text-2xl text-blue-100 mb-12 max-w-4xl mx-auto leading-relaxed">
             A freelancer blending creativity, technology, and growth to deliver impactful results.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button 
-              size="lg" 
+          <div className="flex justify-center">
+            <Button
+              size="lg"
               className="bg-gradient-to-r from-tech-blue-light to-tech-purple-light hover:from-white hover:to-white hover:text-tech-blue text-white font-bold px-8 py-4 text-lg transition-all duration-300 hover:scale-105 shadow-2xl"
             >
               Work With Me
               <ArrowRight className="ml-2 h-6 w-6" />
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-tech-blue font-bold px-8 py-4 text-lg transition-all duration-300 hover:scale-105 backdrop-blur-sm"
-            >
-              View Portfolio
-              <ExternalLink className="ml-2 h-6 w-6" />
             </Button>
           </div>
         </div>
