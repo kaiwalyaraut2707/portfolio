@@ -32,18 +32,18 @@ export default function Index() {
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <div className="text-2xl font-bold text-black">
+            <div className="text-2xl font-bold bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent">
               Your Name
             </div>
             <div className="hidden md:flex space-x-8 text-sm font-medium">
-              <a href="#home" className="text-gray-800 hover:text-gold transition-colors duration-300">Home</a>
-              <a href="#about" className="text-gray-800 hover:text-gold transition-colors duration-300">About</a>
-              <a href="#services" className="text-gray-800 hover:text-gold transition-colors duration-300">Services</a>
-              <a href="#portfolio" className="text-gray-800 hover:text-gold transition-colors duration-300">Portfolio</a>
-              <a href="#testimonials" className="text-gray-800 hover:text-gold transition-colors duration-300">Testimonials</a>
-              <a href="#contact" className="text-gray-800 hover:text-gold transition-colors duration-300">Contact</a>
+              <a href="#home" className="text-gray-800 hover:text-tech-blue transition-colors duration-300">Home</a>
+              <a href="#about" className="text-gray-800 hover:text-tech-blue transition-colors duration-300">About</a>
+              <a href="#services" className="text-gray-800 hover:text-tech-blue transition-colors duration-300">Services</a>
+              <a href="#portfolio" className="text-gray-800 hover:text-tech-blue transition-colors duration-300">Portfolio</a>
+              <a href="#testimonials" className="text-gray-800 hover:text-tech-blue transition-colors duration-300">Testimonials</a>
+              <a href="#contact" className="text-gray-800 hover:text-tech-blue transition-colors duration-300">Contact</a>
             </div>
-            <Button className="bg-gold hover:bg-gold-dark text-black font-semibold px-6 py-2 transition-all duration-300 hover:scale-105 shadow-lg">
+            <Button className="bg-gradient-to-r from-tech-blue to-tech-purple hover:from-tech-blue-dark hover:to-tech-purple-dark text-white font-semibold px-6 py-2 transition-all duration-300 hover:scale-105 shadow-lg">
               Work With Me
             </Button>
           </div>
@@ -52,22 +52,30 @@ export default function Index() {
 
       {/* Hero Section */}
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-gold/10 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-tech-blue via-tech-purple to-tech-blue-dark"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+        
+        {/* Animated background elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-white/5 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white/3 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 right-1/3 w-48 h-48 bg-white/7 rounded-full blur-2xl animate-pulse delay-500"></div>
+        </div>
+        
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
             I help brands grow with{" "}
-            <span className="bg-gradient-to-r from-gold via-yellow-400 to-gold bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-white via-tech-blue-light to-white bg-clip-text text-transparent animate-pulse">
               Design, Content, Websites, and Automation
             </span>
           </h1>
-          <p className="text-xl sm:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl sm:text-2xl text-blue-100 mb-12 max-w-4xl mx-auto leading-relaxed">
             A freelancer blending creativity, technology, and growth to deliver impactful results.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button 
               size="lg" 
-              className="bg-gold hover:bg-gold-dark text-black font-bold px-8 py-4 text-lg transition-all duration-300 hover:scale-105 shadow-xl"
+              className="bg-gradient-to-r from-tech-blue-light to-tech-purple-light hover:from-white hover:to-white hover:text-tech-blue text-white font-bold px-8 py-4 text-lg transition-all duration-300 hover:scale-105 shadow-2xl"
             >
               Work With Me
               <ArrowRight className="ml-2 h-6 w-6" />
@@ -75,7 +83,7 @@ export default function Index() {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-2 border-gold text-gold hover:bg-gold hover:text-black font-bold px-8 py-4 text-lg transition-all duration-300 hover:scale-105"
+              className="border-2 border-white text-white hover:bg-white hover:text-tech-blue font-bold px-8 py-4 text-lg transition-all duration-300 hover:scale-105 backdrop-blur-sm"
             >
               View Portfolio
               <ExternalLink className="ml-2 h-6 w-6" />
@@ -83,11 +91,11 @@ export default function Index() {
           </div>
         </div>
         
-        {/* Floating elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 border border-gold/30 rotate-45 animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-16 h-16 border border-gold/30 rotate-12 animate-pulse"></div>
-        <div className="absolute top-1/2 left-20 w-2 h-2 bg-gold rounded-full animate-bounce"></div>
-        <div className="absolute top-1/3 right-32 w-1 h-1 bg-gold rounded-full animate-ping"></div>
+        {/* Floating tech elements */}
+        <div className="absolute top-20 left-10 w-20 h-20 border-2 border-white/30 rotate-45 animate-spin-slow"></div>
+        <div className="absolute bottom-20 right-10 w-16 h-16 border-2 border-white/30 rotate-12 animate-bounce"></div>
+        <div className="absolute top-1/2 left-20 w-3 h-3 bg-white rounded-full animate-pulse"></div>
+        <div className="absolute top-1/3 right-32 w-2 h-2 bg-white rounded-full animate-ping"></div>
       </section>
 
       {/* About Me Section */}
@@ -95,11 +103,11 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-black mb-8">
+              <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent mb-8">
                 About Me
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                I'm <strong className="text-gold">Your Name</strong>, a freelancer and B.Tech CSE student with expertise in design, content, websites, and AI. 
+                I'm <strong className="bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent">Your Name</strong>, a freelancer and B.Tech CSE student with expertise in design, content, websites, and AI. 
                 I combine technical skills with business creativity to help startups and entrepreneurs scale.
               </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
@@ -109,32 +117,33 @@ export default function Index() {
               
               {/* Stats */}
               <div className="grid grid-cols-3 gap-8 mb-8">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-gold mb-2">50+</div>
+                <div className="text-center p-4 rounded-lg bg-gradient-to-br from-tech-blue/10 to-tech-purple/10">
+                  <div className="text-3xl font-bold bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent mb-2">50+</div>
                   <div className="text-sm text-gray-600">Projects Completed</div>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-gold mb-2">25+</div>
+                <div className="text-center p-4 rounded-lg bg-gradient-to-br from-tech-blue/10 to-tech-purple/10">
+                  <div className="text-3xl font-bold bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent mb-2">25+</div>
                   <div className="text-sm text-gray-600">Happy Clients</div>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-gold mb-2">3+</div>
+                <div className="text-center p-4 rounded-lg bg-gradient-to-br from-tech-blue/10 to-tech-purple/10">
+                  <div className="text-3xl font-bold bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent mb-2">3+</div>
                   <div className="text-sm text-gray-600">Years Experience</div>
                 </div>
               </div>
               
-              <Button className="bg-black hover:bg-gray-800 text-white border-2 border-gold hover:border-gold-dark px-6 py-3 transition-all duration-300">
+              <Button className="bg-gradient-to-r from-tech-blue to-tech-purple hover:from-tech-blue-dark hover:to-tech-purple-dark text-white px-6 py-3 transition-all duration-300 hover:scale-105">
                 Download Resume
               </Button>
             </div>
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-black to-gray-800 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-gold/20 to-transparent"></div>
-                <div className="w-40 h-40 bg-gradient-to-br from-gold to-gold-dark rounded-full flex items-center justify-center text-black text-6xl font-bold z-10">
+              <div className="aspect-square bg-gradient-to-br from-tech-blue/20 to-tech-purple/20 rounded-2xl flex items-center justify-center relative overflow-hidden backdrop-blur-sm">
+                <div className="absolute inset-0 bg-gradient-to-br from-tech-blue/30 to-tech-purple/30"></div>
+                <div className="w-40 h-40 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full flex items-center justify-center text-white text-6xl font-bold z-10 shadow-2xl">
                   YN
                 </div>
-                <div className="absolute top-4 right-4 w-8 h-8 border-2 border-gold rotate-45"></div>
-                <div className="absolute bottom-4 left-4 w-6 h-6 border-2 border-gold rotate-12"></div>
+                <div className="absolute top-4 right-4 w-8 h-8 border-2 border-tech-blue rotate-45 animate-spin-slow"></div>
+                <div className="absolute bottom-4 left-4 w-6 h-6 border-2 border-tech-purple rotate-12 animate-bounce"></div>
+                <div className="absolute top-1/2 right-8 w-3 h-3 bg-tech-blue rounded-full animate-pulse"></div>
               </div>
             </div>
           </div>
@@ -142,10 +151,10 @@ export default function Index() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-32 bg-gray-50">
+      <section id="services" className="py-32 bg-gradient-to-br from-gray-50 to-blue-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-4xl lg:text-5xl font-bold text-black mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent mb-6">
               Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -191,15 +200,15 @@ export default function Index() {
                 description: "Thumbnails, Reels/Shorts Editing, Explainers"
               }
             ].map((service, index) => (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-500 border-0 bg-white hover:bg-black cursor-pointer transform hover:-translate-y-2">
+              <Card key={index} className="group hover:shadow-2xl transition-all duration-500 border-0 bg-white hover:bg-gradient-to-br hover:from-tech-blue hover:to-tech-purple cursor-pointer transform hover:-translate-y-2">
                 <CardContent className="p-8 text-center">
-                  <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gold/10 group-hover:bg-gold flex items-center justify-center text-black group-hover:text-black transition-all duration-300 group-hover:scale-110">
+                  <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-tech-blue/10 to-tech-purple/10 group-hover:bg-white/20 flex items-center justify-center text-tech-blue group-hover:text-white transition-all duration-300 group-hover:scale-110">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-black group-hover:text-white mb-3 transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-white mb-3 transition-colors duration-300">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 group-hover:text-gray-300 leading-relaxed transition-colors duration-300">
+                  <p className="text-gray-600 group-hover:text-blue-100 leading-relaxed transition-colors duration-300">
                     {service.description}
                   </p>
                 </CardContent>
@@ -213,7 +222,7 @@ export default function Index() {
       <section id="portfolio" className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-4xl lg:text-5xl font-bold text-black mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent mb-6">
               Portfolio
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -232,13 +241,13 @@ export default function Index() {
             ].map((project, index) => (
               <Card key={index} className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer">
                 <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-black/0 group-hover:from-black/90 group-hover:to-black/70 transition-all duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-tech-blue/0 group-hover:from-tech-blue/90 group-hover:to-tech-purple/90 transition-all duration-500"></div>
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
                     <div className="text-center">
-                      <div className="text-gold text-2xl font-bold mb-2">
+                      <div className="text-white text-2xl font-bold mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                         {project.title}
                       </div>
-                      <div className="text-white text-sm">
+                      <div className="text-blue-200 text-sm transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
                         {project.type}
                       </div>
                     </div>
@@ -249,12 +258,12 @@ export default function Index() {
                     </div>
                   </div>
                 </div>
-                <CardContent className="p-6 bg-white group-hover:bg-black transition-colors duration-500">
+                <CardContent className="p-6 bg-white group-hover:bg-gradient-to-r group-hover:from-tech-blue group-hover:to-tech-purple transition-all duration-500">
                   <div className="flex justify-between items-start">
-                    <h3 className="text-lg font-bold text-black group-hover:text-white transition-colors duration-500">
+                    <h3 className="text-lg font-bold text-gray-900 group-hover:text-white transition-colors duration-500">
                       {project.title}
                     </h3>
-                    <span className="text-xs px-3 py-1 bg-gold text-black rounded-full font-medium">
+                    <span className="text-xs px-3 py-1 bg-gradient-to-r from-tech-blue to-tech-purple text-white rounded-full font-medium">
                       {project.category}
                     </span>
                   </div>
@@ -266,13 +275,13 @@ export default function Index() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-32 bg-black">
+      <section id="testimonials" className="py-32 bg-gradient-to-br from-tech-blue via-tech-purple to-tech-blue-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               What Clients Say
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
               Don't just take my word for it - here's what my clients have to say about working with me.
             </p>
           </div>
@@ -298,22 +307,22 @@ export default function Index() {
                 rating: 5
               }
             ].map((testimonial, index) => (
-              <Card key={index} className="bg-white border-2 border-gold/20 hover:border-gold transition-all duration-300 hover:shadow-2xl">
+              <Card key={index} className="bg-white/95 backdrop-blur-sm border-0 hover:bg-white transition-all duration-300 hover:shadow-2xl hover:scale-105">
                 <CardContent className="p-8">
-                  <Quote className="h-8 w-8 text-gold mb-4" />
+                  <Quote className="h-8 w-8 text-tech-blue mb-4" />
                   <div className="flex mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-gold text-gold" />
+                      <Star key={i} className="h-5 w-5 fill-tech-purple text-tech-purple" />
                     ))}
                   </div>
                   <p className="text-gray-700 mb-6 leading-relaxed italic">
                     "{testimonial.text}"
                   </p>
                   <div>
-                    <p className="font-bold text-black">
+                    <p className="font-bold text-gray-900">
                       {testimonial.author}
                     </p>
-                    <p className="text-sm text-gold font-medium">
+                    <p className="text-sm bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent font-medium">
                       {testimonial.role}
                     </p>
                   </div>
@@ -328,7 +337,7 @@ export default function Index() {
       <section id="contact" className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-4xl lg:text-5xl font-bold text-black mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent mb-6">
               Let's Work Together
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -338,45 +347,45 @@ export default function Index() {
           
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Form */}
-            <Card className="border-2 border-gold/20 shadow-xl">
+            <Card className="border-2 border-gradient-to-r from-tech-blue/20 to-tech-purple/20 shadow-xl bg-gradient-to-br from-gray-50 to-blue-50/30">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-black mb-8">
+                <h3 className="text-2xl font-bold bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent mb-8">
                   Send me a message
                 </h3>
                 <form className="space-y-6">
                   <div>
-                    <label className="block text-sm font-bold text-black mb-3">
+                    <label className="block text-sm font-bold text-gray-900 mb-3">
                       Name
                     </label>
                     <Input 
                       placeholder="Your name" 
-                      className="border-2 border-gray-200 focus:border-gold h-12 text-lg"
+                      className="border-2 border-gray-200 focus:border-tech-blue h-12 text-lg"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-bold text-black mb-3">
+                    <label className="block text-sm font-bold text-gray-900 mb-3">
                       Email
                     </label>
                     <Input 
                       type="email" 
                       placeholder="your@email.com" 
-                      className="border-2 border-gray-200 focus:border-gold h-12 text-lg"
+                      className="border-2 border-gray-200 focus:border-tech-blue h-12 text-lg"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-bold text-black mb-3">
+                    <label className="block text-sm font-bold text-gray-900 mb-3">
                       Project Details
                     </label>
                     <Textarea 
                       placeholder="Tell me about your project..." 
-                      className="border-2 border-gray-200 focus:border-gold min-h-[150px] resize-none text-lg"
+                      className="border-2 border-gray-200 focus:border-tech-blue min-h-[150px] resize-none text-lg"
                     />
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Button className="bg-gold hover:bg-gold-dark text-black font-bold px-6 py-3 transition-all duration-300 hover:scale-105 flex-1">
+                    <Button className="bg-gradient-to-r from-tech-blue to-tech-purple hover:from-tech-blue-dark hover:to-tech-purple-dark text-white font-bold px-6 py-3 transition-all duration-300 hover:scale-105 flex-1">
                       Get a Free Quote
                     </Button>
-                    <Button className="bg-black hover:bg-gray-800 text-white border-2 border-gold font-bold px-6 py-3 transition-all duration-300 hover:scale-105 flex-1">
+                    <Button className="bg-white hover:bg-gradient-to-r hover:from-tech-blue hover:to-tech-purple text-tech-blue hover:text-white border-2 border-tech-blue font-bold px-6 py-3 transition-all duration-300 hover:scale-105 flex-1">
                       Book a Call
                     </Button>
                   </div>
@@ -387,25 +396,25 @@ export default function Index() {
             {/* Contact Info */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-black mb-8">
+                <h3 className="text-2xl font-bold bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent mb-8">
                   Get in touch
                 </h3>
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gold rounded-lg flex items-center justify-center">
-                      <Mail className="h-6 w-6 text-black" />
+                    <div className="w-12 h-12 bg-gradient-to-r from-tech-blue to-tech-purple rounded-lg flex items-center justify-center">
+                      <Mail className="h-6 w-6 text-white" />
                     </div>
                     <span className="text-lg text-gray-700">your.email@example.com</span>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gold rounded-lg flex items-center justify-center">
-                      <Phone className="h-6 w-6 text-black" />
+                    <div className="w-12 h-12 bg-gradient-to-r from-tech-blue to-tech-purple rounded-lg flex items-center justify-center">
+                      <Phone className="h-6 w-6 text-white" />
                     </div>
                     <span className="text-lg text-gray-700">+1 (555) 123-4567</span>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gold rounded-lg flex items-center justify-center">
-                      <MapPin className="h-6 w-6 text-black" />
+                    <div className="w-12 h-12 bg-gradient-to-r from-tech-blue to-tech-purple rounded-lg flex items-center justify-center">
+                      <MapPin className="h-6 w-6 text-white" />
                     </div>
                     <span className="text-lg text-gray-700">Available Worldwide</span>
                   </div>
@@ -413,17 +422,17 @@ export default function Index() {
               </div>
               
               <div>
-                <h4 className="text-xl font-bold text-black mb-6">
+                <h4 className="text-xl font-bold text-gray-900 mb-6">
                   Follow me
                 </h4>
                 <div className="flex space-x-4">
-                  <a href="#" className="w-14 h-14 bg-black hover:bg-gold text-white hover:text-black rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110">
+                  <a href="#" className="w-14 h-14 bg-gradient-to-r from-tech-blue to-tech-purple hover:from-tech-blue-dark hover:to-tech-purple-dark text-white rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110">
                     <Linkedin className="h-6 w-6" />
                   </a>
-                  <a href="#" className="w-14 h-14 bg-black hover:bg-gold text-white hover:text-black rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110">
+                  <a href="#" className="w-14 h-14 bg-gradient-to-r from-tech-blue to-tech-purple hover:from-tech-blue-dark hover:to-tech-purple-dark text-white rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110">
                     <Instagram className="h-6 w-6" />
                   </a>
-                  <a href="#" className="w-14 h-14 bg-black hover:bg-gold text-white hover:text-black rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110">
+                  <a href="#" className="w-14 h-14 bg-gradient-to-r from-tech-blue to-tech-purple hover:from-tech-blue-dark hover:to-tech-purple-dark text-white rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110">
                     <Github className="h-6 w-6" />
                   </a>
                 </div>
@@ -434,59 +443,59 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-16">
+      <footer className="bg-gradient-to-br from-tech-blue via-tech-purple to-tech-blue-dark text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div className="col-span-2">
-              <div className="text-3xl font-bold text-gold mb-4">
+              <div className="text-3xl font-bold text-white mb-4">
                 Your Name
               </div>
-              <p className="text-gray-300 mb-6 max-w-md">
+              <p className="text-blue-100 mb-6 max-w-md">
                 Helping businesses grow with design, content, websites, and automation. 
                 Let's create something amazing together.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="w-10 h-10 bg-gold text-black rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                <a href="#" className="w-10 h-10 bg-white/20 hover:bg-white text-blue-100 hover:text-tech-blue rounded-lg flex items-center justify-center hover:scale-110 transition-all duration-300 backdrop-blur-sm">
                   <Linkedin className="h-5 w-5" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-gold text-black rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                <a href="#" className="w-10 h-10 bg-white/20 hover:bg-white text-blue-100 hover:text-tech-blue rounded-lg flex items-center justify-center hover:scale-110 transition-all duration-300 backdrop-blur-sm">
                   <Instagram className="h-5 w-5" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-gold text-black rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                <a href="#" className="w-10 h-10 bg-white/20 hover:bg-white text-blue-100 hover:text-tech-blue rounded-lg flex items-center justify-center hover:scale-110 transition-all duration-300 backdrop-blur-sm">
                   <Github className="h-5 w-5" />
                 </a>
               </div>
             </div>
             
             <div>
-              <h4 className="text-lg font-bold text-gold mb-4">Quick Links</h4>
+              <h4 className="text-lg font-bold text-white mb-4">Quick Links</h4>
               <div className="space-y-2">
-                <a href="#about" className="block text-gray-300 hover:text-gold transition-colors duration-300">About</a>
-                <a href="#services" className="block text-gray-300 hover:text-gold transition-colors duration-300">Services</a>
-                <a href="#portfolio" className="block text-gray-300 hover:text-gold transition-colors duration-300">Portfolio</a>
-                <a href="#contact" className="block text-gray-300 hover:text-gold transition-colors duration-300">Contact</a>
+                <a href="#about" className="block text-blue-100 hover:text-white transition-colors duration-300">About</a>
+                <a href="#services" className="block text-blue-100 hover:text-white transition-colors duration-300">Services</a>
+                <a href="#portfolio" className="block text-blue-100 hover:text-white transition-colors duration-300">Portfolio</a>
+                <a href="#contact" className="block text-blue-100 hover:text-white transition-colors duration-300">Contact</a>
               </div>
             </div>
             
             <div>
-              <h4 className="text-lg font-bold text-gold mb-4">Services</h4>
+              <h4 className="text-lg font-bold text-white mb-4">Services</h4>
               <div className="space-y-2">
-                <p className="text-gray-300">Design & Branding</p>
-                <p className="text-gray-300">Web Development</p>
-                <p className="text-gray-300">Content Creation</p>
-                <p className="text-gray-300">AI & Automation</p>
+                <p className="text-blue-100">Design & Branding</p>
+                <p className="text-blue-100">Web Development</p>
+                <p className="text-blue-100">Content Creation</p>
+                <p className="text-blue-100">AI & Automation</p>
               </div>
             </div>
           </div>
           
-          <div className="border-t border-gray-800 pt-8">
+          <div className="border-t border-white/20 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-400 text-sm">
+              <p className="text-blue-100 text-sm">
                 © 2024 Your Name Freelancer. All rights reserved.
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" className="text-gray-400 hover:text-gold text-sm transition-colors duration-300">Privacy Policy</a>
-                <a href="#" className="text-gray-400 hover:text-gold text-sm transition-colors duration-300">Terms of Service</a>
+                <a href="#" className="text-blue-100 hover:text-white text-sm transition-colors duration-300">Privacy Policy</a>
+                <a href="#" className="text-blue-100 hover:text-white text-sm transition-colors duration-300">Terms of Service</a>
               </div>
             </div>
           </div>
