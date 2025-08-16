@@ -218,12 +218,12 @@ export default function Index() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { type: "Logo Design", title: "Modern Tech Startup", category: "Branding" },
-              { type: "Website", title: "E-commerce Platform", category: "Development" },
-              { type: "Content", title: "Growth Marketing Guide", category: "Content" },
-              { type: "Video", title: "YouTube Channel Design", category: "Design" },
-              { type: "Landing Page", title: "SaaS Product Launch", category: "Development" },
-              { type: "Campaign", title: "Social Media Strategy", category: "Marketing" }
+              { type: "Design", title: "Youtube Thumbnails", category: "Design" },
+              { type: "Logo", title: "Brand Logo", category: "Branding" },
+              { type: "Social Media", title: "Instagram Posts", category: "Design" },
+              { type: "Publishing", title: "Books Covers", category: "Design" },
+              { type: "Web", title: "Website Designs", category: "Development" },
+              { type: "Marketing", title: "Ads and Marketing Campaigns", category: "Marketing" }
             ].map((project, index) => (
               <Card key={index} className="group overflow-hidden border shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer">
                 <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 relative overflow-hidden">
