@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { 
+import {
   Palette,
   PenTool,
   Globe,
@@ -22,7 +22,7 @@ import {
   Quote,
   Award,
   Users,
-  Target
+  Target,
 } from "lucide-react";
 
 export default function Index() {
@@ -32,16 +32,44 @@ export default function Index() {
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <div className="text-2xl font-bold text-black">
-              Kaiwalya Raut
-            </div>
+            <div className="text-2xl font-bold text-black">Kaiwalya Raut</div>
             <div className="hidden md:flex space-x-8 text-sm font-medium">
-              <a href="#home" className="text-gray-800 hover:text-black transition-colors duration-300">Home</a>
-              <a href="#about" className="text-gray-800 hover:text-black transition-colors duration-300">About</a>
-              <a href="#services" className="text-gray-800 hover:text-black transition-colors duration-300">Services</a>
-              <a href="#portfolio" className="text-gray-800 hover:text-black transition-colors duration-300">Portfolio</a>
-              <a href="#testimonials" className="text-gray-800 hover:text-black transition-colors duration-300">Testimonials</a>
-              <a href="#contact" className="text-gray-800 hover:text-black transition-colors duration-300">Contact</a>
+              <a
+                href="#home"
+                className="text-gray-800 hover:text-black transition-colors duration-300"
+              >
+                Home
+              </a>
+              <a
+                href="#about"
+                className="text-gray-800 hover:text-black transition-colors duration-300"
+              >
+                About
+              </a>
+              <a
+                href="#services"
+                className="text-gray-800 hover:text-black transition-colors duration-300"
+              >
+                Services
+              </a>
+              <a
+                href="#portfolio"
+                className="text-gray-800 hover:text-black transition-colors duration-300"
+              >
+                Portfolio
+              </a>
+              <a
+                href="#testimonials"
+                className="text-gray-800 hover:text-black transition-colors duration-300"
+              >
+                Testimonials
+              </a>
+              <a
+                href="#contact"
+                className="text-gray-800 hover:text-black transition-colors duration-300"
+              >
+                Contact
+              </a>
             </div>
             <Button className="bg-black hover:bg-gray-800 text-white font-semibold px-6 py-2 transition-all duration-300 hover:scale-105 shadow-lg">
               Work With Me
@@ -51,18 +79,21 @@ export default function Index() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+      <section
+        id="home"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black"
+      >
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-black"></div>
         </div>
-        
+
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-white/5 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white/3 rounded-full blur-3xl animate-pulse delay-1000"></div>
           <div className="absolute top-1/2 right-1/3 w-48 h-48 bg-white/7 rounded-full blur-2xl animate-pulse delay-500"></div>
         </div>
-        
+
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
             I help brands grow with{" "}
@@ -71,11 +102,12 @@ export default function Index() {
             </span>
           </h1>
           <p className="text-xl sm:text-2xl text-gray-400 mb-12 max-w-4xl mx-auto leading-relaxed">
-            A freelancer blending creativity, technology, and growth to deliver impactful results.
+            A freelancer blending creativity, technology, and growth to deliver
+            impactful results.
           </p>
           <div className="flex justify-center">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-white hover:bg-gray-100 text-black font-bold px-8 py-4 text-lg transition-all duration-300 hover:scale-105 shadow-2xl"
             >
               Work With Me
@@ -83,7 +115,7 @@ export default function Index() {
             </Button>
           </div>
         </div>
-        
+
         {/* Floating tech elements */}
         <div className="absolute top-20 left-10 w-20 h-20 border-2 border-white/30 rotate-45 animate-spin-slow"></div>
         <div className="absolute bottom-20 right-10 w-16 h-16 border-2 border-white/30 rotate-12 animate-bounce"></div>
@@ -100,17 +132,27 @@ export default function Index() {
                 About Me
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                I'm <strong className="text-black">Kaiwalya Raut</strong>, a freelancer specializing in design, content, websites, and AI. I combine technical expertise with business creativity to help startups and entrepreneurs scale and succeed in the digital world.
+                I'm <strong className="text-black">Kaiwalya Raut</strong>, a
+                freelancer specializing in design, content, websites, and AI. I
+                combine technical expertise with business creativity to help
+                startups and entrepreneurs scale and succeed in the digital
+                world.
               </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                Driven by a passion for innovation and a keen eye for detail, I've helped dozens of businesses transform their digital presence and achieve meaningful growth through strategic design and technology solutions. My goal is to create work that not only looks great but delivers measurable results.
+                Driven by a passion for innovation and a keen eye for detail,
+                I've helped dozens of businesses transform their digital
+                presence and achieve meaningful growth through strategic design
+                and technology solutions. My goal is to create work that not
+                only looks great but delivers measurable results.
               </p>
-              
+
               {/* Stats */}
               <div className="grid grid-cols-3 gap-8 mb-8">
                 <div className="text-center p-4 rounded-lg bg-gray-50 border">
                   <div className="text-3xl font-bold text-black mb-2">50+</div>
-                  <div className="text-sm text-gray-600">Projects Completed</div>
+                  <div className="text-sm text-gray-600">
+                    Projects Completed
+                  </div>
                 </div>
                 <div className="text-center p-4 rounded-lg bg-gray-50 border">
                   <div className="text-3xl font-bold text-black mb-2">25+</div>
@@ -144,49 +186,53 @@ export default function Index() {
               Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive solutions to help your business grow and succeed in the digital landscape.
+              Comprehensive solutions to help your business grow and succeed in
+              the digital landscape.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {[
               {
                 icon: <Palette className="h-10 w-10" />,
                 title: "Design & Branding",
-                description: "Logos, Brand Kits, Social Media Design"
+                description: "Logos, Brand Kits, Social Media Design",
               },
               {
                 icon: <PenTool className="h-10 w-10" />,
                 title: "Content Creation & Copywriting",
-                description: "Blogs, Web Copy, Social Media Captions"
+                description: "Blogs, Web Copy, Social Media Captions",
               },
               {
                 icon: <Globe className="h-10 w-10" />,
                 title: "Website & Funnel Building",
-                description: "Websites, Landing Pages, E-commerce"
+                description: "Websites, Landing Pages, E-commerce",
               },
               {
                 icon: <TrendingUp className="h-10 w-10" />,
                 title: "Marketing & Growth",
-                description: "SEO, Social Media Marketing, Ads"
+                description: "SEO, Social Media Marketing, Ads",
               },
               {
                 icon: <Bot className="h-10 w-10" />,
                 title: "AI & Automation",
-                description: "Workflow Automation, Chatbots, AI Content"
+                description: "Workflow Automation, Chatbots, AI Content",
               },
               {
                 icon: <Monitor className="h-10 w-10" />,
                 title: "Digital Products",
-                description: "Templates, E-books, Courses"
+                description: "Templates, E-books, Courses",
               },
               {
                 icon: <Video className="h-10 w-10" />,
                 title: "Video & Multimedia",
-                description: "Thumbnails, Reels/Shorts Editing, Explainers"
-              }
+                description: "Thumbnails, Reels/Shorts Editing, Explainers",
+              },
             ].map((service, index) => (
-              <Card key={index} className="group hover:shadow-2xl transition-all duration-500 border bg-white hover:bg-black cursor-pointer transform hover:-translate-y-2">
+              <Card
+                key={index}
+                className="group hover:shadow-2xl transition-all duration-500 border bg-white hover:bg-black cursor-pointer transform hover:-translate-y-2"
+              >
                 <CardContent className="p-8 text-center">
                   <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gray-100 group-hover:bg-white flex items-center justify-center text-black group-hover:text-black transition-all duration-300 group-hover:scale-110">
                     {service.icon}
@@ -212,20 +258,40 @@ export default function Index() {
               Portfolio
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              A showcase of recent projects and creative work across different domains.
+              A showcase of recent projects and creative work across different
+              domains.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { type: "Design", title: "Youtube Thumbnails", category: "Design" },
+              {
+                type: "Design",
+                title: "Youtube Thumbnails",
+                category: "Design",
+              },
               { type: "Logo", title: "Brand Logo", category: "Branding" },
-              { type: "Social Media", title: "Instagram Posts", category: "Design" },
+              {
+                type: "Social Media",
+                title: "Instagram Posts",
+                category: "Design",
+              },
               { type: "Publishing", title: "Books Covers", category: "Design" },
-              { type: "Web", title: "Website Designs", category: "Development" },
-              { type: "Marketing", title: "Ads and Marketing Campaigns", category: "Marketing" }
+              {
+                type: "Web",
+                title: "Website Designs",
+                category: "Development",
+              },
+              {
+                type: "Marketing",
+                title: "Ads and Marketing Campaigns",
+                category: "Marketing",
+              },
             ].map((project, index) => (
-              <Card key={index} className="group overflow-hidden border shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer">
+              <Card
+                key={index}
+                className="group overflow-hidden border shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer"
+              >
                 <div className="aspect-[4/3] relative overflow-hidden">
                   {/* Show actual images for each portfolio card */}
                   {project.title === "Youtube Thumbnails" && (
@@ -270,7 +336,14 @@ export default function Index() {
                       className="w-full h-full object-contain bg-gray-100"
                     />
                   )}
-                  {!["Youtube Thumbnails", "Brand Logo", "Instagram Posts", "Books Covers", "Website Designs", "Ads and Marketing Campaigns"].includes(project.title) && (
+                  {![
+                    "Youtube Thumbnails",
+                    "Brand Logo",
+                    "Instagram Posts",
+                    "Books Covers",
+                    "Website Designs",
+                    "Ads and Marketing Campaigns",
+                  ].includes(project.title) && (
                     <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200"></div>
                   )}
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/90 transition-all duration-500"></div>
@@ -284,7 +357,14 @@ export default function Index() {
                       </div>
                     </div>
                   </div>
-                  {!["Youtube Thumbnails", "Brand Logo", "Instagram Posts", "Books Covers", "Website Designs", "Ads and Marketing Campaigns"].includes(project.title) && (
+                  {![
+                    "Youtube Thumbnails",
+                    "Brand Logo",
+                    "Instagram Posts",
+                    "Books Covers",
+                    "Website Designs",
+                    "Ads and Marketing Campaigns",
+                  ].includes(project.title) && (
                     <div className="absolute inset-0 flex items-center justify-center group-hover:opacity-0 transition-opacity duration-500">
                       <div className="text-gray-400 text-sm font-medium">
                         {project.type} Preview
@@ -316,32 +396,36 @@ export default function Index() {
               What Clients Say
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Don't just take my word for it - here's what my clients have to say about working with me.
+              Don't just take my word for it - here's what my clients have to
+              say about working with me.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 text: "Amazing work, very professional! Delivered exactly what we needed and more. The attention to detail was incredible.",
                 author: "Rohit Mehra",
                 role: "Startup Founder",
-                rating: 5
+                rating: 5,
               },
               {
                 text: "Incredible attention to detail and fast turnaround. Our website conversion rate increased by 300% after the redesign!",
                 author: "Sandeep Reddy",
                 role: "E-commerce Owner",
-                rating: 5
+                rating: 5,
               },
               {
                 text: "Creative, reliable, and always goes above and beyond. Best freelancer I've worked with in years!",
                 author: "Karan Patel",
                 role: "Marketing Manager",
-                rating: 5
-              }
+                rating: 5,
+              },
             ].map((testimonial, index) => (
-              <Card key={index} className="bg-white border-0 hover:shadow-2xl transition-all duration-300 hover:scale-105">
+              <Card
+                key={index}
+                className="bg-white border-0 hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              >
                 <CardContent className="p-8">
                   <Quote className="h-8 w-8 text-black mb-4" />
                   <div className="flex mb-4">
@@ -353,9 +437,7 @@ export default function Index() {
                     "{testimonial.text}"
                   </p>
                   <div>
-                    <p className="font-bold text-black">
-                      {testimonial.author}
-                    </p>
+                    <p className="font-bold text-black">{testimonial.author}</p>
                     <p className="text-sm text-gray-600 font-medium">
                       {testimonial.role}
                     </p>
@@ -375,10 +457,11 @@ export default function Index() {
               Let's Work Together
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ready to take your business to the next level? Get in touch and let's discuss your project.
+              Ready to take your business to the next level? Get in touch and
+              let's discuss your project.
             </p>
           </div>
-          
+
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Form */}
             <Card className="border-2 border-gray-200 shadow-xl bg-gray-50">
@@ -391,8 +474,8 @@ export default function Index() {
                     <label className="block text-sm font-bold text-black mb-3">
                       Name
                     </label>
-                    <Input 
-                      placeholder="Your name" 
+                    <Input
+                      placeholder="Your name"
                       className="border-2 border-gray-200 focus:border-black h-12 text-lg bg-white"
                     />
                   </div>
@@ -400,9 +483,9 @@ export default function Index() {
                     <label className="block text-sm font-bold text-black mb-3">
                       Email
                     </label>
-                    <Input 
-                      type="email" 
-                      placeholder="your@email.com" 
+                    <Input
+                      type="email"
+                      placeholder="your@email.com"
                       className="border-2 border-gray-200 focus:border-black h-12 text-lg bg-white"
                     />
                   </div>
@@ -410,8 +493,8 @@ export default function Index() {
                     <label className="block text-sm font-bold text-black mb-3">
                       Project Details
                     </label>
-                    <Textarea 
-                      placeholder="Tell me about your project..." 
+                    <Textarea
+                      placeholder="Tell me about your project..."
                       className="border-2 border-gray-200 focus:border-black min-h-[150px] resize-none text-lg bg-white"
                     />
                   </div>
@@ -426,7 +509,7 @@ export default function Index() {
                 </form>
               </CardContent>
             </Card>
-            
+
             {/* Contact Info */}
             <div className="space-y-8">
               <div>
@@ -438,35 +521,48 @@ export default function Index() {
                     <div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center">
                       <Mail className="h-6 w-6 text-white" />
                     </div>
-                    <span className="text-lg text-gray-700">your.email@example.com</span>
+                    <span className="text-lg text-gray-700">
+                      your.email@example.com
+                    </span>
                   </div>
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center">
                       <Phone className="h-6 w-6 text-white" />
                     </div>
-                    <span className="text-lg text-gray-700">+1 (555) 123-4567</span>
+                    <span className="text-lg text-gray-700">
+                      +1 (555) 123-4567
+                    </span>
                   </div>
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center">
                       <MapPin className="h-6 w-6 text-white" />
                     </div>
-                    <span className="text-lg text-gray-700">Available Worldwide</span>
+                    <span className="text-lg text-gray-700">
+                      Available Worldwide
+                    </span>
                   </div>
                 </div>
               </div>
-              
+
               <div>
-                <h4 className="text-xl font-bold text-black mb-6">
-                  Follow me
-                </h4>
+                <h4 className="text-xl font-bold text-black mb-6">Follow me</h4>
                 <div className="flex space-x-4">
-                  <a href="#" className="w-14 h-14 bg-black hover:bg-gray-800 text-white rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110">
+                  <a
+                    href="#"
+                    className="w-14 h-14 bg-black hover:bg-gray-800 text-white rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
+                  >
                     <Linkedin className="h-6 w-6" />
                   </a>
-                  <a href="#" className="w-14 h-14 bg-black hover:bg-gray-800 text-white rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110">
+                  <a
+                    href="#"
+                    className="w-14 h-14 bg-black hover:bg-gray-800 text-white rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
+                  >
                     <Instagram className="h-6 w-6" />
                   </a>
-                  <a href="#" className="w-14 h-14 bg-black hover:bg-gray-800 text-white rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110">
+                  <a
+                    href="#"
+                    className="w-14 h-14 bg-black hover:bg-gray-800 text-white rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
+                  >
                     <Github className="h-6 w-6" />
                   </a>
                 </div>
@@ -485,32 +581,61 @@ export default function Index() {
                 Kaiwalya Raut
               </div>
               <p className="text-gray-300 mb-6 max-w-md">
-                Helping businesses grow with design, content, websites, and automation. 
-                Let's create something amazing together.
+                Helping businesses grow with design, content, websites, and
+                automation. Let's create something amazing together.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="w-10 h-10 bg-white text-black rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-white text-black rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                >
                   <Linkedin className="h-5 w-5" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-white text-black rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-white text-black rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                >
                   <Instagram className="h-5 w-5" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-white text-black rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-white text-black rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                >
                   <Github className="h-5 w-5" />
                 </a>
               </div>
             </div>
-            
+
             <div>
               <h4 className="text-lg font-bold text-white mb-4">Quick Links</h4>
               <div className="space-y-2">
-                <a href="#about" className="block text-gray-300 hover:text-white transition-colors duration-300">About</a>
-                <a href="#services" className="block text-gray-300 hover:text-white transition-colors duration-300">Services</a>
-                <a href="#portfolio" className="block text-gray-300 hover:text-white transition-colors duration-300">Portfolio</a>
-                <a href="#contact" className="block text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+                <a
+                  href="#about"
+                  className="block text-gray-300 hover:text-white transition-colors duration-300"
+                >
+                  About
+                </a>
+                <a
+                  href="#services"
+                  className="block text-gray-300 hover:text-white transition-colors duration-300"
+                >
+                  Services
+                </a>
+                <a
+                  href="#portfolio"
+                  className="block text-gray-300 hover:text-white transition-colors duration-300"
+                >
+                  Portfolio
+                </a>
+                <a
+                  href="#contact"
+                  className="block text-gray-300 hover:text-white transition-colors duration-300"
+                >
+                  Contact
+                </a>
               </div>
             </div>
-            
+
             <div>
               <h4 className="text-lg font-bold text-white mb-4">Services</h4>
               <div className="space-y-2">
@@ -521,15 +646,25 @@ export default function Index() {
               </div>
             </div>
           </div>
-          
+
           <div className="border-t border-gray-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-gray-400 text-sm">
                 © 2024 Kaiwalya Raut Freelancer. All rights reserved.
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">Privacy Policy</a>
-                <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">Terms of Service</a>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white text-sm transition-colors duration-300"
+                >
+                  Privacy Policy
+                </a>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white text-sm transition-colors duration-300"
+                >
+                  Terms of Service
+                </a>
               </div>
             </div>
           </div>
