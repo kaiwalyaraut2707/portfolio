@@ -57,17 +57,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Tech gradient brand colors
-        "tech-blue": "#4A90E2",
-        "tech-purple": "#9B59B6",
-        "tech-blue-dark": "#357ABD",
-        "tech-purple-dark": "#8E44AD",
-        "tech-blue-light": "#6BB6FF",
-        "tech-purple-light": "#BB6BD9",
-        gradient: {
-          from: "#4A90E2",
-          to: "#9B59B6",
-        },
+        // Black and white color palette
+        "brand-black": "#000000",
+        "brand-white": "#FFFFFF",
+        "brand-gray": "#808080",
+        "brand-gray-light": "#F5F5F5",
+        "brand-gray-dark": "#333333",
       },
       borderRadius: {
         lg: "var(--radius)",
