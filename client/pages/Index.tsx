@@ -33,7 +33,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="text-2xl font-bold bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent">
-              Your Name
+              Kaiwalya Raut
             </div>
             <div className="hidden md:flex space-x-8 text-sm font-medium">
               <a href="#home" className="text-gray-800 hover:text-tech-blue transition-colors duration-300">Home</a>
@@ -107,7 +107,7 @@ export default function Index() {
                 About Me
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                I'm <strong className="bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent">Your Name</strong>, a freelancer and B.Tech CSE student with expertise in design, content, websites, and AI. 
+                I'm <strong className="bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent">Kaiwalya Raut</strong>, a freelancer and B.Tech CSE student with expertise in design, content, websites, and AI. 
                 I combine technical skills with business creativity to help startups and entrepreneurs scale.
               </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
@@ -448,7 +448,7 @@ export default function Index() {
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div className="col-span-2">
               <div className="text-3xl font-bold text-white mb-4">
-                Your Name
+                Kaiwalya Raut
               </div>
               <p className="text-blue-100 mb-6 max-w-md">
                 Helping businesses grow with design, content, websites, and automation. 
@@ -491,7 +491,7 @@ export default function Index() {
           <div className="border-t border-white/20 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-blue-100 text-sm">
-                © 2024 Your Name Freelancer. All rights reserved.
+                © 2024 Kaiwalya Raut Freelancer. All rights reserved.
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0">
                 <a href="#" className="text-blue-100 hover:text-white text-sm transition-colors duration-300">Privacy Policy</a>
