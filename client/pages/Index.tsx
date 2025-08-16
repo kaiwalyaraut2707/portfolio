@@ -58,37 +58,15 @@ export default function Index() {
       </section>
 
       {/* About Me Section */}
-      <section id="about" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                About Me
-              </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                I'm <strong>Your Name</strong>, a freelancer and B.Tech CSE student with expertise in design, content, websites, and AI. 
-                I combine technical skills with business creativity to help startups and entrepreneurs scale.
-              </p>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                With a passion for innovation and a keen eye for detail, I've helped dozens of businesses 
-                transform their digital presence and achieve meaningful growth through strategic design and technology solutions.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <Badge variant="secondary" className="text-sm">Design</Badge>
-                <Badge variant="secondary" className="text-sm">Development</Badge>
-                <Badge variant="secondary" className="text-sm">Content Creation</Badge>
-                <Badge variant="secondary" className="text-sm">Automation</Badge>
-                <Badge variant="secondary" className="text-sm">B.Tech CSE</Badge>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-brand-blue/10 to-brand-purple/10 rounded-2xl flex items-center justify-center">
-                <div className="w-32 h-32 bg-gradient-to-br from-brand-blue to-brand-purple rounded-full flex items-center justify-center text-white text-4xl font-bold">
-                  YN
-                </div>
-              </div>
-            </div>
-          </div>
+      <section id="about" className="py-32 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-4xl sm:text-5xl font-light text-gray-900 mb-12">
+            About Me
+          </h2>
+          <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto font-light">
+            I'm a freelancer and B.Tech CSE student with expertise in design, content, websites, and AI.
+            I combine technical skills with business creativity to help startups and entrepreneurs scale.
+          </p>
         </div>
       </section>
 
