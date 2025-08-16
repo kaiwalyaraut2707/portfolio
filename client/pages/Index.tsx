@@ -284,7 +284,7 @@ export default function Index() {
                       </div>
                     </div>
                   </div>
-                  {project.title !== "Youtube Thumbnails" && (
+                  {!["Youtube Thumbnails", "Brand Logo", "Instagram Posts", "Books Covers", "Website Designs", "Ads and Marketing Campaigns"].includes(project.title) && (
                     <div className="absolute inset-0 flex items-center justify-center group-hover:opacity-0 transition-opacity duration-500">
                       <div className="text-gray-400 text-sm font-medium">
                         {project.type} Preview
