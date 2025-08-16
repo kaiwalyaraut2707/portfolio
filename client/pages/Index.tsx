@@ -232,7 +232,7 @@ export default function Index() {
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F6e635168f63247a0bc5d2339f6255adb%2Fc843272e50714a12b7cd2056ec4d992b?format=webp&width=800"
                       alt="Youtube Thumbnails Portfolio"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain bg-gray-100"
                     />
                   ) : (
                     <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200"></div>
