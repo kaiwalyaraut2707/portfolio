@@ -226,7 +226,17 @@ export default function Index() {
               { type: "Marketing", title: "Ads and Marketing Campaigns", category: "Marketing" }
             ].map((project, index) => (
               <Card key={index} className="group overflow-hidden border shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer">
-                <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 relative overflow-hidden">
+                <div className="aspect-[4/3] relative overflow-hidden">
+                  {/* Show actual thumbnail image for Youtube Thumbnails card */}
+                  {project.title === "Youtube Thumbnails" ? (
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6e635168f63247a0bc5d2339f6255adb%2Fc843272e50714a12b7cd2056ec4d992b?format=webp&width=800"
+                      alt="Youtube Thumbnails Portfolio"
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200"></div>
+                  )}
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/90 transition-all duration-500"></div>
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
                     <div className="text-center">
@@ -238,11 +248,13 @@ export default function Index() {
                       </div>
                     </div>
                   </div>
-                  <div className="absolute inset-0 flex items-center justify-center group-hover:opacity-0 transition-opacity duration-500">
-                    <div className="text-gray-400 text-sm font-medium">
-                      {project.type} Preview
+                  {project.title !== "Youtube Thumbnails" && (
+                    <div className="absolute inset-0 flex items-center justify-center group-hover:opacity-0 transition-opacity duration-500">
+                      <div className="text-gray-400 text-sm font-medium">
+                        {project.type} Preview
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
                 <CardContent className="p-6 bg-white group-hover:bg-black transition-all duration-500">
                   <div className="flex justify-between items-start">
