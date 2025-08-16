@@ -57,16 +57,16 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Premium brand colors
-        gold: "#FFD700",
-        "gold-dark": "#DAA520",
-        "gold-light": "#FFF8DC",
-        premium: {
-          black: "#000000",
-          gold: "#FFD700",
-          "gold-dark": "#DAA520",
-          "gold-light": "#FFF8DC",
-          white: "#FFFFFF",
+        // Tech gradient brand colors
+        "tech-blue": "#4A90E2",
+        "tech-purple": "#9B59B6",
+        "tech-blue-dark": "#357ABD",
+        "tech-purple-dark": "#8E44AD",
+        "tech-blue-light": "#6BB6FF",
+        "tech-purple-light": "#BB6BD9",
+        gradient: {
+          from: "#4A90E2",
+          to: "#9B59B6",
         },
       },
       borderRadius: {
