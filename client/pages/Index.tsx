@@ -123,9 +123,6 @@ export default function Index() {
                 </div>
               </div>
               
-              <Button className="bg-gradient-to-r from-tech-blue to-tech-purple hover:from-tech-blue-dark hover:to-tech-purple-dark text-white px-6 py-3 transition-all duration-300 hover:scale-105">
-                Download Resume
-              </Button>
             </div>
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-tech-blue/20 to-tech-purple/20 rounded-2xl flex items-center justify-center relative overflow-hidden backdrop-blur-sm">
