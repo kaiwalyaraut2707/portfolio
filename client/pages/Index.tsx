@@ -98,13 +98,8 @@ export default function Index() {
               <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent mb-8">
                 About Me
               </h2>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                I'm <strong className="bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent">Kaiwalya Raut</strong>, a freelancer and B.Tech CSE student with expertise in design, content, websites, and AI. 
-                I combine technical skills with business creativity to help startups and entrepreneurs scale.
-              </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                With a passion for innovation and a keen eye for detail, I've helped dozens of businesses 
-                transform their digital presence and achieve meaningful growth through strategic design and technology solutions.
+                I'm <strong className="bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent">Kaiwalya Raut</strong>, a freelancer specializing in design, content, websites, and AI. I combine technical expertise with business creativity to help startups and entrepreneurs scale and succeed in the digital world. Driven by a passion for innovation and a keen eye for detail, I've helped dozens of businesses transform their digital presence and achieve meaningful growth through strategic design and technology solutions. My goal is to create work that not only looks great but delivers measurable results.
               </p>
               
               {/* Stats */}
