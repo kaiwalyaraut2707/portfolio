@@ -127,6 +127,7 @@ export default function Index() {
           <div className="flex justify-center">
             <Button
               size="lg"
+              onClick={() => scrollToSection('contact')}
               className="bg-white hover:bg-gray-100 text-black font-bold px-8 py-4 text-lg transition-all duration-300 hover:scale-105 shadow-2xl"
             >
               Work With Me
