@@ -10,11 +10,11 @@ interface ContactFormData {
 // Create transporter for Gmail
 const createTransporter = () => {
   return nodemailer.createTransporter({
-    service: 'gmail',
+    service: "gmail",
     auth: {
-      user: process.env.EMAIL_USER || 'your-email@gmail.com',
-      pass: process.env.EMAIL_PASS || 'your-app-password'
-    }
+      user: process.env.EMAIL_USER || "your-email@gmail.com",
+      pass: process.env.EMAIL_PASS || "your-app-password",
+    },
   });
 };
 
@@ -24,18 +24,18 @@ export const handleContactForm: RequestHandler = async (req, res) => {
 
     // Validate required fields
     if (!name || !email || !message) {
-      return res.status(400).json({ 
-        success: false, 
-        error: "All fields are required" 
+      return res.status(400).json({
+        success: false,
+        error: "All fields are required",
       });
     }
 
     // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      return res.status(400).json({ 
-        success: false, 
-        error: "Invalid email format" 
+      return res.status(400).json({
+        success: false,
+        error: "Invalid email format",
       });
     }
 
@@ -46,12 +46,13 @@ export const handleContactForm: RequestHandler = async (req, res) => {
         email,
         message,
         timestamp: new Date().toISOString(),
-        recipientEmail: "kaiwalyaraut27@gmail.com"
+        recipientEmail: "kaiwalyaraut27@gmail.com",
       });
-      
-      return res.json({ 
-        success: true, 
-        message: "Your message has been received! (Email configuration pending)" 
+
+      return res.json({
+        success: true,
+        message:
+          "Your message has been received! (Email configuration pending)",
       });
     }
 
@@ -61,7 +62,7 @@ export const handleContactForm: RequestHandler = async (req, res) => {
     // Email content
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'kaiwalyaraut27@gmail.com',
+      to: "kaiwalyaraut27@gmail.com",
       subject: `New Contact Form Submission from ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -99,34 +100,37 @@ ${message}
 
 Received on: ${new Date().toLocaleString()}
 Reply to: ${email}
-      `
+      `,
     };
 
     // Send email
     await transporter.sendMail(mailOptions);
 
-    console.log("Email sent successfully to kaiwalyaraut27@gmail.com from:", email);
+    console.log(
+      "Email sent successfully to kaiwalyaraut27@gmail.com from:",
+      email,
+    );
 
-    res.json({ 
-      success: true, 
-      message: "Thank you! Your message has been sent successfully. I'll get back to you soon." 
+    res.json({
+      success: true,
+      message:
+        "Thank you! Your message has been sent successfully. I'll get back to you soon.",
     });
-    
   } catch (error) {
     console.error("Contact form error:", error);
-    
+
     // Log the submission even if email fails
     console.log("Contact Form Submission (Email failed):", {
       name: req.body.name,
       email: req.body.email,
       message: req.body.message,
       timestamp: new Date().toISOString(),
-      error: error instanceof Error ? error.message : 'Unknown error'
+      error: error instanceof Error ? error.message : "Unknown error",
     });
-    
-    res.status(500).json({ 
-      success: false, 
-      error: "Failed to send message. Please try again or contact me directly." 
+
+    res.status(500).json({
+      success: false,
+      error: "Failed to send message. Please try again or contact me directly.",
     });
   }
 };

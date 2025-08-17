@@ -29,7 +29,7 @@ export default function Index() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -42,16 +42,16 @@ export default function Index() {
 
     const formData = new FormData(e.currentTarget);
     const data = {
-      name: formData.get('name') as string,
-      email: formData.get('email') as string,
-      message: formData.get('message') as string,
+      name: formData.get("name") as string,
+      email: formData.get("email") as string,
+      message: formData.get("message") as string,
     };
 
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
+      const response = await fetch("/api/contact", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
       });
@@ -59,14 +59,16 @@ export default function Index() {
       const result = await response.json();
 
       if (result.success) {
-        alert('Thank you! Your message has been sent successfully. I\'ll get back to you soon.');
+        alert(
+          "Thank you! Your message has been sent successfully. I'll get back to you soon.",
+        );
         e.currentTarget.reset();
       } else {
-        alert(result.error || 'Failed to send message. Please try again.');
+        alert(result.error || "Failed to send message. Please try again.");
       }
     } catch (error) {
-      console.error('Contact form error:', error);
-      alert('Failed to send message. Please try again.');
+      console.error("Contact form error:", error);
+      alert("Failed to send message. Please try again.");
     }
   };
 
@@ -84,44 +86,44 @@ export default function Index() {
             </button>
             <div className="hidden md:flex space-x-8 text-sm font-medium">
               <button
-                onClick={() => scrollToSection('home')}
+                onClick={() => scrollToSection("home")}
                 className="text-gray-800 hover:text-black transition-colors duration-300"
               >
                 Home
               </button>
               <button
-                onClick={() => scrollToSection('about')}
+                onClick={() => scrollToSection("about")}
                 className="text-gray-800 hover:text-black transition-colors duration-300"
               >
                 About
               </button>
               <button
-                onClick={() => scrollToSection('services')}
+                onClick={() => scrollToSection("services")}
                 className="text-gray-800 hover:text-black transition-colors duration-300"
               >
                 Services
               </button>
               <button
-                onClick={() => scrollToSection('portfolio')}
+                onClick={() => scrollToSection("portfolio")}
                 className="text-gray-800 hover:text-black transition-colors duration-300"
               >
                 Portfolio
               </button>
               <button
-                onClick={() => scrollToSection('testimonials')}
+                onClick={() => scrollToSection("testimonials")}
                 className="text-gray-800 hover:text-black transition-colors duration-300"
               >
                 Testimonials
               </button>
               <button
-                onClick={() => scrollToSection('contact')}
+                onClick={() => scrollToSection("contact")}
                 className="text-gray-800 hover:text-black transition-colors duration-300"
               >
                 Contact
               </button>
             </div>
             <Button
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection("contact")}
               className="bg-black hover:bg-gray-800 text-white font-semibold px-6 py-2 transition-all duration-300 hover:scale-105 shadow-lg"
             >
               Work With Me
@@ -160,7 +162,7 @@ export default function Index() {
           <div className="flex justify-center">
             <Button
               size="lg"
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection("contact")}
               className="bg-white hover:bg-gray-100 text-black font-bold px-8 py-4 text-lg transition-all duration-300 hover:scale-105 shadow-2xl"
             >
               Work With Me
@@ -560,7 +562,10 @@ export default function Index() {
                     />
                   </div>
                   <div className="flex justify-center">
-                    <Button type="submit" className="bg-black hover:bg-gray-800 text-white font-bold px-8 py-3 transition-all duration-300 hover:scale-105 w-full sm:w-auto">
+                    <Button
+                      type="submit"
+                      className="bg-black hover:bg-gray-800 text-white font-bold px-8 py-3 transition-all duration-300 hover:scale-105 w-full sm:w-auto"
+                    >
                       Book a Call
                     </Button>
                   </div>
@@ -668,25 +673,25 @@ export default function Index() {
               <h4 className="text-lg font-bold text-white mb-4">Quick Links</h4>
               <div className="space-y-2">
                 <button
-                  onClick={() => scrollToSection('about')}
+                  onClick={() => scrollToSection("about")}
                   className="block text-gray-300 hover:text-white transition-colors duration-300 text-left"
                 >
                   About
                 </button>
                 <button
-                  onClick={() => scrollToSection('services')}
+                  onClick={() => scrollToSection("services")}
                   className="block text-gray-300 hover:text-white transition-colors duration-300 text-left"
                 >
                   Services
                 </button>
                 <button
-                  onClick={() => scrollToSection('portfolio')}
+                  onClick={() => scrollToSection("portfolio")}
                   className="block text-gray-300 hover:text-white transition-colors duration-300 text-left"
                 >
                   Portfolio
                 </button>
                 <button
-                  onClick={() => scrollToSection('contact')}
+                  onClick={() => scrollToSection("contact")}
                   className="block text-gray-300 hover:text-white transition-colors duration-300 text-left"
                 >
                   Contact
