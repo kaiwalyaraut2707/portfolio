@@ -43,46 +43,54 @@ export default function Index() {
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <div className="text-2xl font-bold text-black">Kaiwalya Raut</div>
+            <button
+              onClick={refreshPage}
+              className="text-2xl font-bold text-black hover:opacity-80 transition-opacity duration-300"
+            >
+              Kaiwalya Raut
+            </button>
             <div className="hidden md:flex space-x-8 text-sm font-medium">
-              <a
-                href="#home"
+              <button
+                onClick={() => scrollToSection('home')}
                 className="text-gray-800 hover:text-black transition-colors duration-300"
               >
                 Home
-              </a>
-              <a
-                href="#about"
+              </button>
+              <button
+                onClick={() => scrollToSection('about')}
                 className="text-gray-800 hover:text-black transition-colors duration-300"
               >
                 About
-              </a>
-              <a
-                href="#services"
+              </button>
+              <button
+                onClick={() => scrollToSection('services')}
                 className="text-gray-800 hover:text-black transition-colors duration-300"
               >
                 Services
-              </a>
-              <a
-                href="#portfolio"
+              </button>
+              <button
+                onClick={() => scrollToSection('portfolio')}
                 className="text-gray-800 hover:text-black transition-colors duration-300"
               >
                 Portfolio
-              </a>
-              <a
-                href="#testimonials"
+              </button>
+              <button
+                onClick={() => scrollToSection('testimonials')}
                 className="text-gray-800 hover:text-black transition-colors duration-300"
               >
                 Testimonials
-              </a>
-              <a
-                href="#contact"
+              </button>
+              <button
+                onClick={() => scrollToSection('contact')}
                 className="text-gray-800 hover:text-black transition-colors duration-300"
               >
                 Contact
-              </a>
+              </button>
             </div>
-            <Button className="bg-black hover:bg-gray-800 text-white font-semibold px-6 py-2 transition-all duration-300 hover:scale-105 shadow-lg">
+            <Button
+              onClick={() => scrollToSection('contact')}
+              className="bg-black hover:bg-gray-800 text-white font-semibold px-6 py-2 transition-all duration-300 hover:scale-105 shadow-lg"
+            >
               Work With Me
             </Button>
           </div>
