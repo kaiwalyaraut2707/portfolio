@@ -629,30 +629,30 @@ export default function Index() {
             <div>
               <h4 className="text-lg font-bold text-white mb-4">Quick Links</h4>
               <div className="space-y-2">
-                <a
-                  href="#about"
-                  className="block text-gray-300 hover:text-white transition-colors duration-300"
+                <button
+                  onClick={() => scrollToSection('about')}
+                  className="block text-gray-300 hover:text-white transition-colors duration-300 text-left"
                 >
                   About
-                </a>
-                <a
-                  href="#services"
-                  className="block text-gray-300 hover:text-white transition-colors duration-300"
+                </button>
+                <button
+                  onClick={() => scrollToSection('services')}
+                  className="block text-gray-300 hover:text-white transition-colors duration-300 text-left"
                 >
                   Services
-                </a>
-                <a
-                  href="#portfolio"
-                  className="block text-gray-300 hover:text-white transition-colors duration-300"
+                </button>
+                <button
+                  onClick={() => scrollToSection('portfolio')}
+                  className="block text-gray-300 hover:text-white transition-colors duration-300 text-left"
                 >
                   Portfolio
-                </a>
-                <a
-                  href="#contact"
-                  className="block text-gray-300 hover:text-white transition-colors duration-300"
+                </button>
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="block text-gray-300 hover:text-white transition-colors duration-300 text-left"
                 >
                   Contact
-                </a>
+                </button>
               </div>
             </div>
 
