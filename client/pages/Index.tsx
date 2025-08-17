@@ -405,7 +405,7 @@ export default function Index() {
             {[
               {
                 text: "Amazing work, very professional! Delivered exactly what we needed and more. The attention to detail was incredible.",
-                author: "Rohit Mehra",
+                author: "Rohit M",
                 role: "Startup Founder",
                 rating: 5,
               },
