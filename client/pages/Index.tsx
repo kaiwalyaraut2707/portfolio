@@ -520,11 +520,8 @@ export default function Index() {
                       className="border-2 border-gray-200 focus:border-black min-h-[150px] resize-none text-lg bg-white"
                     />
                   </div>
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <Button className="bg-black hover:bg-gray-800 text-white font-bold px-6 py-3 transition-all duration-300 hover:scale-105 flex-1">
-                      Get a Free Quote
-                    </Button>
-                    <Button className="bg-white hover:bg-black text-black hover:text-white border-2 border-black font-bold px-6 py-3 transition-all duration-300 hover:scale-105 flex-1">
+                  <div className="flex justify-center">
+                    <Button type="submit" className="bg-black hover:bg-gray-800 text-white font-bold px-8 py-3 transition-all duration-300 hover:scale-105 w-full sm:w-auto">
                       Book a Call
                     </Button>
                   </div>
