@@ -149,13 +149,13 @@ export default function Index() {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-8 mb-8">
                 <div className="text-center p-4 rounded-lg bg-gray-50 border">
-                  <div className="text-3xl font-bold text-black mb-2">50+</div>
+                  <div className="text-3xl font-bold text-black mb-2">20+</div>
                   <div className="text-sm text-gray-600">
                     Projects Completed
                   </div>
                 </div>
                 <div className="text-center p-4 rounded-lg bg-gray-50 border">
-                  <div className="text-3xl font-bold text-black mb-2">25+</div>
+                  <div className="text-3xl font-bold text-black mb-2">10+</div>
                   <div className="text-sm text-gray-600">Happy Clients</div>
                 </div>
                 <div className="text-center p-4 rounded-lg bg-gray-50 border">
@@ -405,19 +405,19 @@ export default function Index() {
             {[
               {
                 text: "Amazing work, very professional! Delivered exactly what we needed and more. The attention to detail was incredible.",
-                author: "Rohit M",
+                author: "Rohit M.",
                 role: "Startup Founder",
                 rating: 5,
               },
               {
                 text: "Incredible attention to detail and fast turnaround. Our website conversion rate increased by 300% after the redesign!",
-                author: "Sandeep Reddy",
+                author: "Sandeep R.",
                 role: "E-commerce Owner",
                 rating: 5,
               },
               {
                 text: "Creative, reliable, and always goes above and beyond. Best freelancer I've worked with in years!",
-                author: "Karan Patel",
+                author: "Karan P.",
                 role: "Marketing Manager",
                 rating: 5,
               },
@@ -522,7 +522,7 @@ export default function Index() {
                       <Mail className="h-6 w-6 text-white" />
                     </div>
                     <span className="text-lg text-gray-700">
-                      your.email@example.com
+                      kaiwalyaraut27@gmail.com
                     </span>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -530,7 +530,7 @@ export default function Index() {
                       <Phone className="h-6 w-6 text-white" />
                     </div>
                     <span className="text-lg text-gray-700">
-                      +1 (555) 123-4567
+                      +91 8830965244
                     </span>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -650,7 +650,7 @@ export default function Index() {
           <div className="border-t border-gray-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-gray-400 text-sm">
-                © 2024 Kaiwalya Raut Freelancer. All rights reserved.
+                © 2025 Kaiwalya Raut . All rights reserved.
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0">
                 <a
