@@ -186,12 +186,14 @@ export default function Index() {
             </div>
             <div className="relative">
               <div className="aspect-square bg-gray-100 rounded-2xl flex items-center justify-center relative overflow-hidden border">
-                <div className="w-40 h-40 bg-black rounded-full flex items-center justify-center text-white text-6xl font-bold z-10 shadow-2xl">
-                  KR
-                </div>
-                <div className="absolute top-4 right-4 w-8 h-8 border-2 border-black rotate-45 animate-spin-slow"></div>
-                <div className="absolute bottom-4 left-4 w-6 h-6 border-2 border-gray-400 rotate-12 animate-bounce"></div>
-                <div className="absolute top-1/2 right-8 w-3 h-3 bg-black rounded-full animate-pulse"></div>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F6e635168f63247a0bc5d2339f6255adb%2F935153925adc4f92b1f898413c7d814d?format=webp&width=800"
+                  alt="Kaiwalya Raut"
+                  className="w-full h-full object-cover rounded-2xl"
+                />
+                <div className="absolute top-4 right-4 w-8 h-8 border-2 border-white rotate-45 animate-spin-slow opacity-80"></div>
+                <div className="absolute bottom-4 left-4 w-6 h-6 border-2 border-white rotate-12 animate-bounce opacity-80"></div>
+                <div className="absolute top-1/2 right-8 w-3 h-3 bg-white rounded-full animate-pulse opacity-80"></div>
               </div>
             </div>
           </div>
