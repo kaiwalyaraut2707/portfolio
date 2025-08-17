@@ -524,12 +524,14 @@ export default function Index() {
                 <h3 className="text-2xl font-bold text-black mb-8">
                   Send me a message
                 </h3>
-                <form className="space-y-6">
+                <form onSubmit={handleContactSubmit} className="space-y-6">
                   <div>
                     <label className="block text-sm font-bold text-black mb-3">
                       Name
                     </label>
                     <Input
+                      name="name"
+                      required
                       placeholder="Your name"
                       className="border-2 border-gray-200 focus:border-black h-12 text-lg bg-white"
                     />
@@ -539,7 +541,9 @@ export default function Index() {
                       Email
                     </label>
                     <Input
+                      name="email"
                       type="email"
+                      required
                       placeholder="your@email.com"
                       className="border-2 border-gray-200 focus:border-black h-12 text-lg bg-white"
                     />
@@ -549,6 +553,8 @@ export default function Index() {
                       Project Details
                     </label>
                     <Textarea
+                      name="message"
+                      required
                       placeholder="Tell me about your project..."
                       className="border-2 border-gray-200 focus:border-black min-h-[150px] resize-none text-lg bg-white"
                     />
