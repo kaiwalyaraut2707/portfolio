@@ -26,6 +26,17 @@ import {
 } from "lucide-react";
 
 export default function Index() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const refreshPage = () => {
+    window.location.reload();
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
