@@ -59,7 +59,7 @@ export default function Index() {
       );
 
       // EmailJS returns different response structures, check for success
-      if (result.status === 200 || result.text === 'OK') {
+      if (result.status === 200 || result.text === "OK") {
         alert(
           "Thank you! Your message has been sent successfully. I'll get back to you soon.",
         );
