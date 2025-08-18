@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import {
   Palette,
   PenTool,
@@ -43,9 +43,9 @@ export default function Index() {
 
     try {
       // EmailJS configuration
-      const serviceId = 'service_ndcozcg';
-      const templateId = 'template_4r5rjt1';
-      const publicKey = 'N_AsAyqvkZ747e6Yz';
+      const serviceId = "service_ndcozcg";
+      const templateId = "template_4r5rjt1";
+      const publicKey = "N_AsAyqvkZ747e6Yz";
 
       // Initialize EmailJS with your public key
       emailjs.init(publicKey);
@@ -55,18 +55,20 @@ export default function Index() {
         serviceId,
         templateId,
         e.currentTarget,
-        publicKey
+        publicKey,
       );
 
       if (result.status === 200) {
-        alert('Thank you! Your message has been sent successfully. I\'ll get back to you soon.');
+        alert(
+          "Thank you! Your message has been sent successfully. I'll get back to you soon.",
+        );
         e.currentTarget.reset();
       } else {
-        throw new Error('EmailJS returned non-200 status');
+        throw new Error("EmailJS returned non-200 status");
       }
     } catch (error) {
-      console.error('Contact form error:', error);
-      alert('Failed to send message. Please try again or contact me directly.');
+      console.error("Contact form error:", error);
+      alert("Failed to send message. Please try again or contact me directly.");
     }
   };
 
