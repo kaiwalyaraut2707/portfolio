@@ -42,16 +42,10 @@ export default function Index() {
     e.preventDefault();
 
     try {
-      // EmailJS configuration - replace with your actual IDs
-      const serviceId = 'YOUR_SERVICE_ID';
-      const templateId = 'YOUR_TEMPLATE_ID';
-      const publicKey = 'YOUR_PUBLIC_KEY';
-
-      // Check if EmailJS is configured
-      if (serviceId === 'YOUR_SERVICE_ID' || templateId === 'YOUR_TEMPLATE_ID' || publicKey === 'YOUR_PUBLIC_KEY') {
-        alert('EmailJS configuration is pending. Please set up your EmailJS credentials.');
-        return;
-      }
+      // EmailJS configuration
+      const serviceId = 'service_ndcozcg';
+      const templateId = 'template_4r5rjt1';
+      const publicKey = 'N_AsAyqvkZ747e6Yz';
 
       // Initialize EmailJS with your public key
       emailjs.init(publicKey);
