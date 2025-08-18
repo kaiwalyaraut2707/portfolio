@@ -41,35 +41,38 @@ export default function Index() {
   const handleContactSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const formData = new FormData(e.currentTarget);
-    const data = {
-      name: formData.get("name") as string,
-      email: formData.get("email") as string,
-      message: formData.get("message") as string,
-    };
-
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+      // EmailJS configuration - replace with your actual IDs
+      const serviceId = 'YOUR_SERVICE_ID';
+      const templateId = 'YOUR_TEMPLATE_ID';
+      const publicKey = 'YOUR_PUBLIC_KEY';
 
-      const result = await response.json();
+      // Check if EmailJS is configured
+      if (serviceId === 'YOUR_SERVICE_ID' || templateId === 'YOUR_TEMPLATE_ID' || publicKey === 'YOUR_PUBLIC_KEY') {
+        alert('EmailJS configuration is pending. Please set up your EmailJS credentials.');
+        return;
+      }
 
-      if (result.success) {
-        alert(
-          "Thank you! Your message has been sent successfully. I'll get back to you soon.",
-        );
+      // Initialize EmailJS with your public key
+      emailjs.init(publicKey);
+
+      // Send email using EmailJS
+      const result = await emailjs.sendForm(
+        serviceId,
+        templateId,
+        e.currentTarget,
+        publicKey
+      );
+
+      if (result.status === 200) {
+        alert('Thank you! Your message has been sent successfully. I\'ll get back to you soon.');
         e.currentTarget.reset();
       } else {
-        alert(result.error || "Failed to send message. Please try again.");
+        throw new Error('EmailJS returned non-200 status');
       }
     } catch (error) {
-      console.error("Contact form error:", error);
-      alert("Failed to send message. Please try again.");
+      console.error('Contact form error:', error);
+      alert('Failed to send message. Please try again or contact me directly.');
     }
   };
 
